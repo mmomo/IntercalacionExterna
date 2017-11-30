@@ -49,5 +49,6 @@ int main (int argc, char *argv[])
   }
   
   fclose(salida);
+  printf("Archivo %s generado!\n", archivo);
   return 0;
 }

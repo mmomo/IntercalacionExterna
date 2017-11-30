@@ -50,9 +50,10 @@ int generar_tokens(int nums[], char *buff)
 /*
  * Lee un archivo y guarda su contenido en un string. Devuelve el string generado.
  */
-char *leer(FILE *f, char *archivo)
+char *leer(char *archivo)
 {
-  char *buff = malloc(sizeof(char) * 2000);
+  FILE *f;
+  char *buff = malloc(sizeof(char) * 1000);
 
   f = fopen(archivo, "r");
   fscanf(f, "%[^\n]%*c", buff);
